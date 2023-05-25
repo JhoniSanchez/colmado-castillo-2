@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Galería de Imágenes</title>
+  <style>
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 10px;
+      background-color: rgb(222, 222, 231);
+      padding: 1%;
+    }
+    
+    .image-container {
+        position: relative;
+        width: 100%;
+    
+      }
+
+      .descripcion {
+color: rgb(0, 0, 0);
+font-size: 15px;
+margin: 0;
+      }
+
+      .calculo {
+        display: flex;
+        justify-content: space-between;
+        
+
+
+      }
+
+      .total {
+  display: flex;
+flex-direction: column;
+margin: 0;
+      
+        
+      }
+
+
+      .text-black {
+        margin: 0.5rem;
+      }
+
+    
+
+    /*.card .image {
+        width: 100%;
+        height: 100%;
+      } 
+
+*/
+.image {
+  max-width: 200px; /* Ancho máximo deseado */
+  max-height: 150px; /* Alto máximo deseado */
+  width: auto;
+  height: auto;
+}
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.856);
+      color: #fff;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+
+      margin: 0;
+    }
+
+.overlay-content p {
+display: inline;
+font-size: 10px;
+  }
+    
+    .image-container:hover .overlay,
+    .image-container.clicked .overlay {
+      opacity: 1;
+    }
+    
+    .overlay-content {
+      padding: 5px;
+      margin: 0;
+    }
+    
+    .buttons {
+      display: none;
+      justify-content: space-between;
+      margin-top: 10px;
+    }
+    
+
+    .button2 {
+      padding: 0;
+      background-color: #2f3b5a;
+      color: #ffffff;
+      border: none;
+      cursor: pointer;
+      border-radius: 10px;
+      width: auto;
+    }
+    
+    .button2:hover {
+      background-color: #2470ff;
+      color: #000000;
+      font-weight: bolder;
+    }
+    
+    .button2:active {
+      background-color: #0f67ff;
+      color: #000000;
+      font-weight: bolder;
+    }
+
+
+    
+    .button {
+      padding: 5px 10px;
+      background-color: #2d362e;
+      color: #ffffff;
+      border: none;
+      cursor: pointer;
+      border-radius: 3px;
+    }
+    
+    .button:hover {
+      background-color: #24ff78;
+      color: #000000;
+      font-weight: bolder;
+    }
+    
+    .button:active {
+      background-color: #0fff6b;
+      color: #000000;
+      font-weight: bolder;
+    }
+
+
+
+
+    
+        .show-buttons .buttons {
+      display: flex;
+    }
+
+        .bmas {
+      background-color: #376147;
+      color: #ffffff;
+      
+    }
+    
+    .bmas:hover {
+      background-color: #24ff78;
+      color: #000000;
+      
+    }
+    
+    .bmas:active {
+      background-color: #0fff6b;
+      color: #000000;
+      
+    }
+   .nmenos {
+      background-color: #442b2b;
+      color: #ffffff;
+      
+    }
+    .nmenos:hover {
+      background-color: #d50000;
+      color: #000000;
+      
+    }
+    
+    .nmenos:active {
+      background-color: #ff0000;
+      color: #000000;
+      
+    }
+
+
+
+
+
+#precios{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.card {
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.432); /* Agrega sombra a la tarjeta */
+    padding: 20px;
+    border-radius: 5px;
+  
+
+   
+    
+  
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .card .image {
+    max-width: 200px; /* Ancho máximo deseado */
+    max-height: 150px; /* Alto máximo deseado */
+    width: auto;
+    height: auto;
+  }
+
+.Titulo {
+    margin: 5px;
+    text-align: center;
+}
+  </style>
+</head>
+<body>
+<div class="gallery">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+<script src="./logica.js" type="module" ></script>
+<script src="./logica2.js" type="module" ></script>
+<script>
+
+  </script>
+
+
+</body>
+
+</html>
