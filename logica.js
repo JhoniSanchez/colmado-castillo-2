@@ -4,7 +4,7 @@ import { data } from "./Data.js";
 
 
 
-for (let i = 1; i <= data.length; i++) {
+for (let i = 85; i <= data.length; i++) {
 
 
 
@@ -20,7 +20,7 @@ for (let i = 1; i <= data.length; i++) {
 
 <div class="card">
 
-<h6 class="Titulo">${data[i].Producto}</h6>
+<h5 class="Titulo">${data[i].Producto}</h5>
 <img class="image" src=./img/${data[i].imagen}.jpg <div id="precios">
 
 <div>
@@ -35,7 +35,7 @@ for (let i = 1; i <= data.length; i++) {
 <div class="overlay">
 
 <div class="overlay-content">
-<div class="button2" type="button" id="salir">M/O</div>
+
   <h6>${data[i].Producto}</h6>
 
   <div class="calculo">
@@ -108,7 +108,7 @@ for (let i = 1; i <= data.length; i++) {
     insetar.insertAdjacentElement("afterbegin", nueva)
 
 
-    let salir = document.querySelector('#salir');
+    // let salir = document.querySelector('#salir');
 
 
     let prefacturar = document.querySelector('#prefacturar');
@@ -150,6 +150,7 @@ for (let i = 1; i <= data.length; i++) {
     let resultadounidad = 0
 
     function sumaunacaja() {
+      event.stopPropagation();
         counterUna++;
         resultadoUna = Number.parseFloat(data[i].caja) * counterUna
         cajaCompletaXCantidad.innerHTML = formateador.format(resultadoUna.toFixed(2));
@@ -158,6 +159,7 @@ for (let i = 1; i <= data.length; i++) {
        
     }
     function restaunacaja() {
+      event.stopPropagation();
         counterUna--;
         resultadoUna = Number.parseFloat(data[i].caja) * counterUna
         cajaCompletaXCantidad.innerHTML = formateador.format(resultadoUna.toFixed(2));
@@ -166,6 +168,7 @@ for (let i = 1; i <= data.length; i++) {
      
     }
     function sumaumediacaja() {
+      event.stopPropagation();
         counterMedia++;
 
         resultadoMedia = Number.parseFloat(data[i].mediacaja) * counterMedia
@@ -174,6 +177,7 @@ for (let i = 1; i <= data.length; i++) {
         totalCajas.innerHTML = formateador.format((resultadounidad + resultadoMedia + resultadoUna));
             }
     function restamediacaja() {
+      event.stopPropagation();
         counterMedia--;
         resultadoMedia = Number.parseFloat(data[i].mediacaja) * counterMedia
         mediacajaXcantidad.innerHTML = formateador.format(resultadoMedia.toFixed(2));
@@ -183,6 +187,7 @@ for (let i = 1; i <= data.length; i++) {
 
 
     function sumaunidad() {
+      event.stopPropagation();
         counterunidad++;
 
         resultadounidad = Number.parseFloat(data[i].unidad) * counterunidad
@@ -191,6 +196,7 @@ for (let i = 1; i <= data.length; i++) {
         totalCajas.innerHTML = formateador.format((resultadounidad + resultadoMedia + resultadoUna));
            }
     function restaunidad() {
+      event.stopPropagation();
         counterunidad--;
         resultadounidad = Number.parseFloat(data[i].unidad) * counterunidad
         unidadXcantidad.innerHTML = formateador.format(resultadounidad.toFixed(2));
@@ -198,17 +204,18 @@ for (let i = 1; i <= data.length; i++) {
         totalCajas.innerHTML = formateador.format((resultadounidad + resultadoMedia + resultadoUna));
          }
 
-    function salirf() {
-        var imageContainers = document.querySelectorAll('.image-container');
-        imageContainers.forEach(function (container) {
-            container.addEventListener('click', function () {
-                this.classList.toggle('clicked');
-            });
-        });
+    // function salirf() {
+    //     var imageContainers = document.querySelectorAll('.image-container');
+    //     imageContainers.forEach(function (container) {
+    //         container.addEventListener('click', function () {
+    //             this.classList.toggle('clicked');
+    //         });
+    //     });
 
-    }
+    // }
 
     prefacturar.addEventListener("click", e => {
+      event.stopPropagation();
 
         // const taskId = e.target.previousSibling.previousSibling.getAttribute('id');
         // const contents = document.getElementById(taskId);
@@ -258,7 +265,7 @@ ${totalunidadXcantidad} media cajas X ${data[i].unidad}
 
 
 
-    salir.addEventListener('click', salirf);
+    // salir.addEventListener('click', salirf);
 
 
 }

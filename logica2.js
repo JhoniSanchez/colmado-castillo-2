@@ -1,7 +1,7 @@
 var imageContainers = document.querySelectorAll('.image-container');
 imageContainers.forEach(function (container) {
     container.addEventListener('click', function () {
-        this.classList.add('clicked');
+        this.classList.toggle('clicked');
     });
 });
 
