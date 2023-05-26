@@ -9,7 +9,7 @@ export const data =
     "unidad": "unidad"
   },
   {
-    "Producto": "fFRUTOP NARANJA  12/450 ML",
+    "Producto": "FRUTOP NARANJA  12/450 ML",
     "imagen": 35,
     "caja": 0,
     "mediacaja": 0,
@@ -130,51 +130,51 @@ export const data =
   {
     "Producto": "ARROZ DOS PINOS FUNDA 1 LB",
     "imagen": 23,
-    "caja": 1790.04,
-    "mediacaja": 895.44,
-    "unidad": 29.96
+    "caja": 1853.97,
+    "mediacaja": 927.42,
+    "unidad": 31.03
   },
   {
     "Producto": "ARROZ DOS PINOS FUNDA 2 LB",
     "imagen": 24,
-    "caja": 1790.04,
-    "mediacaja": 895.1,
-    "unidad": 59.92
+    "caja": 1853.97,
+    "mediacaja": 927.07,
+    "unidad": 62.06
   },
   {
     "Producto": "ARROZ DOS PINOS FUNDA 5 LB",
     "imagen": 25,
-    "caja": 1797.6,
-    "mediacaja": 0,
-    "unidad": 149.94
+    "caja": 1861.8,
+    "mediacaja": 939.6,
+    "unidad": 155.3
   },
   {
     "Producto": "ARROZ DOS PINOS SACO 10 LB",
     "imagen": 26,
     "caja": 0,
     "mediacaja": 0,
-    "unidad": 295.01
+    "unidad": 305.66
   },
   {
     "Producto": "ARROZ DOS PINOS SACO 20 LB",
     "imagen": 27,
     "caja": 0,
     "mediacaja": 0,
-    "unidad": 594.75
+    "unidad": 616.26
   },
   {
     "Producto": "ARROZ DOS PINOS SACO 25 LB",
     "imagen": 28,
     "caja": 0,
     "mediacaja": 0,
-    "unidad": 740.06
+    "unidad": 766.83
   },
   {
     "Producto": "ARROZ DOS PINOS SACO 50 LB",
     "imagen": 29,
     "caja": 0,
     "mediacaja": 0,
-    "unidad": 1480.74
+    "unidad": 1534.39
   },
   {
     "Producto": "ARROZ SELECTO 10 LB",
