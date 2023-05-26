@@ -4,7 +4,7 @@ import { data } from "./Data.js";
 
 
 
-for (let i = 85; i <= data.length; i++) {
+for (let i = 1; i <= data.length; i++) {
 
 
 
